@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sapi Gooo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+<header class="navbar">
+  <div class="logo-container">
+    <img src="foto/image2.png" alt="Logo Sapi Gooo" class="logo-img">
+    <h1 class="logo-text">Sapi <span>Gooo</span></h1>
+  </div>
+
+<nav class="nav-links">
+  <a href="beranda.html">Beranda</a>
+  <a href="#produk">Produk</a>
+  <a href="#footer">Lokasi</a>
+  <a href="#info" class="scroll-link">Info</a>
+  <a href="tentangsg.html">Tentang SG</a>
+</nav>
+</header>
+
+  <!-- HERO SECTION -->
+<section class="hero">
+  <div class="hero-content">
+    <h2>Jual-Beli sapi berkualitas<br>dan terpercaya</h2>
+
+    <select id="jenisSapi">
+      <option value="">-- Pilih Jenis Sapi --</option>
+      <option value="lokal.html">Sapi Lokal</option>
+      <option value="internasional.html">Sapi Internasional</option>
+    </select>
+
+    <button onclick="bukaHalaman()">Pilih Sapi</button>
+  </div>
+</section>
+
+<script>
+  function bukaHalaman() {
+    const pilihan = document.getElementById("jenisSapi").value;
+    if (pilihan) {
+      window.location.href = pilihan;
+    } else {
+      alert("Silakan pilih jenis sapi terlebih dahulu!");
+    }
+  }
+</script>
+  <!-- INTRO -->
+<section class="intro">
+  <img src="foto/img1.png" alt="Sapi Lokal">
+  <div class="intro-text">
+    <h3>Selamat Datang di Sapi Gooo</h3>
+    <h2>Solusi Soal Sapi</h2>
+    <p>Kami menyediakan segala sapi dari berbagai dunia baik lokal maupun internasional.</p>
+    <p>Dapatkan penawaran harga terbaik dengan kualitas prima mulai dari pembelian Sapi impor dan lokal.</p>
+   <a href="tentangsg.html" class="btn-more">Lebih lanjut</a>
+  </div>
+</section>
+
+
+  <!-- PRODUK -->
+  <section id="produk" class="produk">
+    <h2>Produk Sapi Gooo</h2>
+    <p>Pilihan terbaik produk dunia sapi, pilih dan pelajari lebih lanjut.</p>
+
+    <h3 class="kategori">Internasional</h3>
+    <div class="produk-grid">
+      <div class="card">
+        <img src="foto/image6.png" alt="Sapi Angus">
+        <h4>Sapi Angus Hitam (Skotlandia)</h4>
+        <p>Rp.150.000.000</p>
+      </div>
+      <div class="card">
+        <img src="foto/image9.png " alt="Sapi Limosin">
+        <h4>Sapi Limosin (Eropa)</h4>
+        <p>Rp.50.000.000</p>
+      </div>
+      <div class="card">
+        <img src="foto/image8.png" alt="Sapi Longhorn">
+        <h4>Sapi Longhorn (Spanyol)</h4>
+        <p>Rp.150.000.000</p>
+      </div>
+    </div>
+
+    <h3 class="kategori">Lokal</h3>
+    <div class="produk-grid">
+      <div class="card">
+        <img src="foto/image10.png" alt="Sapi Madura">
+        <h4>Sapi Madura</h4>
+        <p>Rp.24.000.000</p>
+      </div>
+      <div class="card">
+        <img src="foto/image11.png" alt="Sapi Bali">
+        <h4>Sapi Bali</h4>
+        <p>Rp.17.000.000</p>
+      </div>
+      <div class="card">
+        <img src="foto/image12.png" alt="Sapi Pasundan">
+        <h4>Sapi Pasundan</h4>
+        <p>Rp.18.000.000</p>
+      </div>
+      <div class="card">
+        <img src="foto/image13.png" alt="Sapi Ongole">
+        <h4>Sapi Ongole</h4>
+        <p>Rp.20.000.000</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+ <footer id="info">
+    <h3>Daftar dan dapatkan penawaran terbaik</h3>
+    <form>
+      <input type="email" placeholder="Masukkan email anda..." required>
+      <button type="submit">SEND</button>
+    </form>
+
+    <div class="footer-grid">
+      <div>
+        <h4>Sapi Gooo</h4>
+        <p>KETANGI, Jl. Raya Ketangi Tegalgondo, Malang, Jawa Timur</p>
+        <p>HP: 0857-07050-0004</p>
+      </div>
+      <div>
+        <h4>JAM OPERASIONAL</h4>
+        <p>Senin - Jumat: 06.00 - 19.00</p>
+        <p>Sabtu - Minggu: 06.00 - 21.00</p>
+      </div>
+      <div>
+        <h4>INFO</h4>
+        <p>Pembelian sapi bisa langsung ke toko atau lewat website.</p>
+      </div>
+    </div>
+
+    <p class="copy">© 2025 -2028 SapiGooo.com | Powered by Sapi Internasional</p>
+  </footer>
+
+</body>
+</html>
